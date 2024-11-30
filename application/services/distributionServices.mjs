@@ -10,6 +10,7 @@ import {
     s_messageStreamHandler,
     s_pubSub,
     s_rpcSignaling,
+    s_sync,
 } from "./distributionServiceKeys.mjs";
 
 export function getMessageQueue(services) {
@@ -34,6 +35,10 @@ export function getPubSub(services) {
 
 export function getRpcSignaling(services) {
     return getProvider(services)[s_rpcSignaling]();
+}
+
+export function getSynchronizer(services) {
+    return getProvider(services)[s_sync]();
 }
 
 export function getStreamHandler(services) {

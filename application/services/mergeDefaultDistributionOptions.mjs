@@ -1,6 +1,6 @@
 import {distributionFactories} from "./distributionFactories.mjs";
 
-export function mergeDefaultDistributionOptions(options) {
+export function mergeDefaultDistributionOptions(options = {}) {
     let {
         factories = {},
     } = options;
