@@ -11,15 +11,15 @@ import {
     s_pubSub,
     s_rpcSignaling,
     s_sync,
-} from "./distributionServiceKeys.mjs";
+} from "./serviceKeys.mjs";
 import {Synchronizer} from "velor-utils/utils/sync.mjs";
 import {createRpcSignalingManager} from "../factories/createRpcSignalingManager.mjs";
 import {ReadStreamHandler} from "velor-messaging/messaging/managers/ReadStreamHandler.mjs";
 import {createMessageBuilderInstance} from "velor-api/api/application/factories/createMessageBuilderInstance.mjs";
-import {s_messageCoder} from "velor-api/api/application/services/apiServiceKeys.mjs";
+import {s_messageCoder} from "velor-api/api/application/services/serviceKeys.mjs";
 import {createMessageCoderInstance} from "velor-api/api/application/factories/createMessageCoderInstance.mjs";
 
-export const distributionFactories = {
+export const factories = {
     [s_pubSub]: createLocalPubSubInstance,
     [s_keyStore]: LocalAsyncKeyStore,
     [s_messageQueue]: createMessageQueueInstance,

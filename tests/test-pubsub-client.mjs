@@ -8,7 +8,7 @@ import {
     s_pubSub,
     s_rpcSignaling,
     s_sync
-} from "../application/services/distributionServiceKeys.mjs";
+} from "../application/services/serviceKeys.mjs";
 import {PubSubMixin} from "../distribution/impl/PubSubMixin.mjs";
 import {LocalPubSub} from "../distribution/impl/LocalPubSub.mjs";
 import {MessageBuilder} from "velor-messaging/messaging/message/MessageBuilder.mjs";
@@ -16,7 +16,7 @@ import {noOpLogger} from "velor-utils/utils/noOpLogger.mjs";
 import {
     getMessageBuilder,
     getPubSub
-} from "../application/services/distributionServices.mjs";
+} from "../application/services/services.mjs";
 import sinon from "sinon";
 import {waitOnAsync} from 'velor-utils/test/waitOnAsync.mjs';
 import {subscribe} from "../distribution/actions/subscribe.mjs";

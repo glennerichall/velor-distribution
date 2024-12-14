@@ -4,7 +4,7 @@ import {
     createSubscriptionSet,
     getSubscriptionSet
 } from "../subscriber/subscriber.mjs";
-import {getPubSub} from "../../application/services/distributionServices.mjs";
+import {getPubSub} from "../../application/services/services.mjs";
 import {composeReceiveFromPubSubListener} from "../composers/composeReceiveFromPubSubListener.mjs";
 
 export async function subscribeTransportToChannel(services, transport, channel, onUnsubscribe = null) {

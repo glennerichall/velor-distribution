@@ -1,6 +1,6 @@
 import {RpcSignalingManager} from "velor-messaging/messaging/managers/RpcSignalingManager.mjs";
-import {getProvider} from "velor-services/injection/baseServices.mjs";
-import {s_sync} from "../services/distributionServiceKeys.mjs";
+import {getProvider} from "velor-services/application/services/baseServices.mjs";
+import {s_sync} from "../services/serviceKeys.mjs";
 
 export function createRpcSignalingManager(services) {
     const provider = getProvider(services);

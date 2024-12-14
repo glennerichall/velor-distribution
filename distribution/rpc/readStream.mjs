@@ -1,12 +1,12 @@
 import {MessageWrapper} from "velor-messaging/messaging/message/MessageWrapper.mjs";
 import {getChannelForStream} from "../channels.mjs";
 
-import {getLogger} from "velor-services/injection/services.mjs";
+import {getLogger} from "velor-services/application/services/services.mjs";
 import {
     getMessageBuilder,
     getPubSub,
     getStreamHandler
-} from "../../application/services/distributionServices.mjs";
+} from "../../application/services/services.mjs";
 
 
 export async function readStream(services, type, data, ...channels) {

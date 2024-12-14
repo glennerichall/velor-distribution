@@ -1,6 +1,6 @@
 import {BullMessageQueue} from "../../distribution/impl/BullMessageQueue.mjs";
-import {getEnvValue, getEnvValueIndirect, getNodeEnv} from "velor-services/injection/baseServices.mjs";
-import {REDIS_CONNECTION_STRING, REDIS_QUEUE_NAME, REDISCLOUD_URL_VAR} from "../services/distributionEnvKeys.mjs";
+import {getEnvValue, getEnvValueIndirect, getNodeEnv} from "velor-services/application/services/baseServices.mjs";
+import {REDIS_CONNECTION_STRING, REDIS_QUEUE_NAME, REDISCLOUD_URL_VAR} from "../services/envKeys.mjs";
 
 export function createMessageQueueInstance(services) {
 

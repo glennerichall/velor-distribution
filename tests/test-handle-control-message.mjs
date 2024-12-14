@@ -6,7 +6,7 @@ import {
     s_pubSub,
     s_rpcSignaling,
     s_sync
-} from "../application/services/distributionServiceKeys.mjs";
+} from "../application/services/serviceKeys.mjs";
 import {MessageBuilder} from "velor-messaging/messaging/message/MessageBuilder.mjs";
 import {noOpLogger} from "velor-utils/utils/noOpLogger.mjs";
 import {createRpcSignalingManager} from "../application/factories/createRpcSignalingManager.mjs";
@@ -20,7 +20,7 @@ import {
 } from "../distribution/rpc/control.mjs";
 import sinon from "sinon";
 import {handleControlMessagePolicy} from "../distribution/rpc/handlers/handleControlMessage.mjs";
-import {getMessageBuilder, getPubSub} from "../application/services/distributionServices.mjs";
+import {getMessageBuilder, getPubSub} from "../application/services/services.mjs";
 import {PubSubMessageFactory} from "../distribution/messaging/PubSubMessageFactory.mjs";
 import {initializeHmacSigning} from "velor-utils/utils/signature.mjs";
 import {getChannelForRpc} from "../distribution/channels.mjs";

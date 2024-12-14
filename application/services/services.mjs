@@ -1,6 +1,6 @@
 import {
     getProvider
-} from "velor-services/injection/baseServices.mjs";
+} from "velor-services/application/services/baseServices.mjs";
 
 import {
     s_clientProvider,
@@ -11,7 +11,7 @@ import {
     s_pubSub,
     s_rpcSignaling,
     s_sync,
-} from "./distributionServiceKeys.mjs";
+} from "./serviceKeys.mjs";
 
 export function getMessageQueue(services) {
     return getProvider(services)[s_messageQueue]();

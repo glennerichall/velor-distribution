@@ -2,8 +2,8 @@ import {getChannelForRpc} from "../channels.mjs";
 import {
     getMessageBuilder,
     getPubSub
-} from "../../application/services/distributionServices.mjs";
-import {getLogger} from "velor-services/injection/services.mjs";
+} from "../../application/services/services.mjs";
+import {getLogger} from "velor-services/application/services/services.mjs";
 
 export async function replyToRequest(services, message, response) {
     const pubSub = getPubSub(services);

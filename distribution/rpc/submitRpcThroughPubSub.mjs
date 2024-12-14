@@ -6,8 +6,8 @@ import {
     getMessageBuilder,
     getPubSub,
     getRpcSignaling
-} from "../../application/services/distributionServices.mjs";
-import {getLogger} from "velor-services/injection/services.mjs";
+} from "../../application/services/services.mjs";
+import {getLogger} from "velor-services/application/services/services.mjs";
 
 export async function submitRpcThroughPubSub(services, message, ...channels) {
 

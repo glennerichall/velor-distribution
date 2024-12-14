@@ -5,7 +5,7 @@ import {unsubscribe} from "./actions/unsubscribe.mjs";
 import {subscribe} from "./actions/subscribe.mjs";
 import {ClientProviderPubSub} from "./ClientProviderPubSub.mjs";
 import {getServices} from "velor-services/injection/ServicesContext.mjs";
-import {getPubSub} from "../application/services/distributionServices.mjs";
+import {getPubSub} from "../application/services/services.mjs";
 
 export function isTransport(transportOrId) {
     return typeof transportOrId?.send === 'function';

@@ -1,5 +1,5 @@
 import {cleanSubscriptions} from "../subscriber/cleanSubscriptions.mjs";
-import {getPubSub} from "../../application/services/distributionServices.mjs";
+import {getPubSub} from "../../application/services/services.mjs";
 
 export async function unsubscribeAll(services, channels) {
     let subscriptions = [];

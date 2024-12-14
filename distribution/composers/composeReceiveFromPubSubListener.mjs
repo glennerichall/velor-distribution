@@ -1,6 +1,6 @@
 import {PubSubMessageBuilder} from "../messaging/PubSubMessageBuilder.mjs";
-import {getLogger} from "velor-services/injection/services.mjs";
-import {getMessageBuilder} from "../../application/services/distributionServices.mjs";
+import {getLogger} from "velor-services/application/services/services.mjs";
+import {getMessageBuilder} from "../../application/services/services.mjs";
 import {handleControlMessage as handleControlMessageFunction} from "../rpc/handlers/handleControlMessage.mjs";
 
 export const composeReceiveFromPubSubListenerPolicy = (handleControlMessage) =>

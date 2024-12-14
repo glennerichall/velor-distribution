@@ -1,4 +1,3 @@
-export const s_database = 'database';
 export const s_messageQueue = 'messageQueue';
 export const s_keyStore = 'keyStore';
 export const s_logger = 'logger';

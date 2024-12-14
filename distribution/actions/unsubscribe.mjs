@@ -1,6 +1,6 @@
 import {getSubscriptions} from "../subscriber/getSubscriptions.mjs";
 import {cleanSubscriptions} from "../subscriber/cleanSubscriptions.mjs";
-import {getPubSub} from "../../application/services/distributionServices.mjs";
+import {getPubSub} from "../../application/services/services.mjs";
 
 
 export async function unsubscribe(services, transport, ...channels) {

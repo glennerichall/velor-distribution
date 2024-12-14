@@ -1,5 +1,5 @@
 import {PubSubMessageFactory} from "../messaging/PubSubMessageFactory.mjs";
-import {getMessageBuilder} from "../../application/services/distributionServices.mjs";
+import {getMessageBuilder} from "../../application/services/services.mjs";
 import {submitRpcThroughPubSub} from "../rpc/submitRpcThroughPubSub.mjs";
 
 

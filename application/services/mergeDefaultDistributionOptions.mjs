@@ -1,4 +1,4 @@
-import {distributionFactories} from "./distributionFactories.mjs";
+import {factories as defaultFactories} from "./factories.mjs";
 
 export function mergeDefaultDistributionOptions(options = {}) {
     let {
@@ -9,7 +9,7 @@ export function mergeDefaultDistributionOptions(options = {}) {
         ...options,
 
         factories: {
-            ...distributionFactories,
+            ...defaultFactories,
             ...factories
         }
     };

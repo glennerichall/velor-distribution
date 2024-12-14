@@ -3,7 +3,7 @@ import {
     PUBSUB_CONTROL_SUBSCRIBE,
     PUBSUB_CONTROL_UNSUBSCRIBE
 } from "../control.mjs";
-import {getLogger} from "velor-services/injection/services.mjs";
+import {getLogger} from "velor-services/application/services/services.mjs";
 import {handleControlRpc} from "./handleControlRpc.mjs";
 import {handleControlSubscribe} from "./handleControlSubscribe.mjs";
 import {handleControlUnsubscribe} from "./handleControlUnsubscribe.mjs";

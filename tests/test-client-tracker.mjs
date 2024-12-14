@@ -5,14 +5,14 @@ import {
     s_logger,
     s_messageBuilder,
     s_pubSub, s_rpcSignaling, s_sync
-} from "../application/services/distributionServiceKeys.mjs";
+} from "../application/services/serviceKeys.mjs";
 import {isClientSubscribed} from "../distribution/subscriber/isClientSubscribed.mjs";
 import {LocalPubSub} from "../distribution/impl/LocalPubSub.mjs";
 import {PubSubMixin} from "../distribution/impl/PubSubMixin.mjs";
 import {noOpLogger} from "velor-utils/utils/noOpLogger.mjs";
 import {
     getPubSub
-} from "../application/services/distributionServices.mjs";
+} from "../application/services/services.mjs";
 import {initializeHmacSigning} from "velor-utils/utils/signature.mjs";
 import {waitOnAsync} from 'velor-utils/test/waitOnAsync.mjs';
 import {Synchronizer} from "velor-utils/utils/sync.mjs";

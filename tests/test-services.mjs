@@ -1,7 +1,7 @@
 import {setupTestContext} from "velor-utils/test/setupTestContext.mjs";
 import {createAppServicesInstance} from "velor-services/injection/ServicesContext.mjs";
 import {mergeDefaultDistributionOptions} from "../application/services/mergeDefaultDistributionOptions.mjs";
-import {getProvider} from "velor-services/injection/baseServices.mjs";
+import {getProvider} from "velor-services/application/services/baseServices.mjs";
 import {
     getKeyStore,
     getMessageBuilder,
@@ -10,7 +10,7 @@ import {
     getRpcSignaling,
     getStreamHandler,
     getSynchronizer
-} from "../application/services/distributionServices.mjs";
+} from "../application/services/services.mjs";
 import {PubSubMixin} from "../distribution/impl/PubSubMixin.mjs";
 import {LocalPubSub} from "../distribution/impl/LocalPubSub.mjs";
 import {LocalAsyncKeyStore} from "../distribution/impl/LocalKeyStore.mjs";

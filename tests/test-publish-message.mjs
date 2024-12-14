@@ -6,7 +6,7 @@ import {
     s_logger,
     s_messageBuilder,
     s_pubSub
-} from "../application/services/distributionServiceKeys.mjs";
+} from "../application/services/serviceKeys.mjs";
 import {noOpLogger} from "velor-utils/utils/noOpLogger.mjs";
 import sinon from "sinon";
 

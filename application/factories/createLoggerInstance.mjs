@@ -1,8 +1,8 @@
 import winston from "winston";
 
-import {getEnvValue, isProduction} from "velor-services/injection/baseServices.mjs";
+import {getEnvValue, isProduction} from "velor-services/application/services/baseServices.mjs";
 
-import {LOG_LEVEL} from "../services/distributionEnvKeys.mjs";
+import {LOG_LEVEL} from "../services/envKeys.mjs";
 
 export function createLoggerInstance(services) {
     const level = getEnvValue(services, LOG_LEVEL) ?? isProduction(services) ? 'info' : 'debug';

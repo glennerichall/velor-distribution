@@ -1,5 +1,5 @@
 import {validateMessage} from "velor-messaging/messaging/message/isMessage.mjs";
-import {getPubSub} from "../../application/services/distributionServices.mjs";
+import {getPubSub} from "../../application/services/services.mjs";
 
 export function publishPubSubMessage(services, message, ...channels) {
     let promises = [];
